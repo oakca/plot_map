@@ -39,6 +39,7 @@ if __name__ == '__main__':
     # read data
     data = pd.read_csv('data/node_list.csv')
 
-    # create map & save
+    # choose map name & create map & save
+    map_name = 'map'
     map = create_map(data)
-    map.save('map/map.html')
+    map.save('map/'+map_name+'.html')
